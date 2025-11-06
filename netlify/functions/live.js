@@ -4,7 +4,6 @@ export async function handler() {
   const channel = "rootbeer65";
 
   try {
-    // 1) Get app token
     const tokenRes = await fetch(
       `https://id.twitch.tv/oauth2/token?client_id=${clientId}&client_secret=${clientSecret}&grant_type=client_credentials`,
       { method: "POST" }
@@ -15,7 +14,6 @@ export async function handler() {
     }
     const { access_token } = await tokenRes.json();
 
-    // 2) Ask Twitch if channel is live
     const r = await fetch(
       `https://api.twitch.tv/helix/streams?user_login=${encodeURIComponent(channel)}`,
       { headers: { "Client-ID": clientId, "Authorization": `Bearer ${access_token}` } }

@@ -21,5 +21,6 @@ async function checkLive() {
     console.error("Live check failed:", err);
   }
 }
+
 checkLive();
 setInterval(checkLive, 60000);

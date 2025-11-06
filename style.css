@@ -1,5 +1,5 @@
 /* =========================
-   IMPORTS & ROOT VARIABLES
+  IMPORTS & ROOT VARIABLES
    ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Geo:ital@0;1&display=swap');
 
@@ -13,7 +13,7 @@
 }
 
 /* =========================
-   BASE / TYPOGRAPHY
+  BASE / TYPOGRAPHY
    ========================= */
 html, body { height: 100%; margin: 0; position: relative; }
 .main_font { font-family: 'Audiowide', cursive; }
@@ -21,7 +21,7 @@ html, body { height: 100%; margin: 0; position: relative; }
 .main-title { color: var(--chalk); }
 
 /* =========================
-   LAYOUT & BACKGROUND
+  LAYOUT & BACKGROUND
    ========================= */
 body {
   background:
@@ -53,7 +53,7 @@ main { box-shadow: 0 0 30px rgb(139 128 128 / 60%), inset 0 0 10px rgba(0,0,0,0.
 }
 
 /* =========================
-   HEADER TITLE EFFECT
+  HEADER TITLE EFFECT
    ========================= */
 .main-title{
   font-weight: 800;
@@ -80,7 +80,7 @@ main { box-shadow: 0 0 30px rgb(139 128 128 / 60%), inset 0 0 10px rgba(0,0,0,0.
 .main-title:hover{ animation-play-state: paused, paused; }
 
 /* =========================
-   SOCIAL LINKS & ICONS
+  SOCIAL LINKS & ICONS
    ========================= */
 .social-link{
   display:inline-block; text-decoration:none; color:#f0f0f0;
@@ -103,7 +103,7 @@ main { box-shadow: 0 0 30px rgb(139 128 128 / 60%), inset 0 0 10px rgba(0,0,0,0.
 .social-link:hover .social-icon{ animation: iconJiggle .4s ease-in-out 1; }
 
 /* =========================
-   TEXT EFFECTS (INLINE)
+  TEXT EFFECTS (INLINE)
    ========================= */
 .irish{
   font-weight:700;
@@ -125,7 +125,7 @@ main { box-shadow: 0 0 30px rgb(139 128 128 / 60%), inset 0 0 10px rgba(0,0,0,0.
 }
 
 /* =========================
-   DIVIDERS & FOOTER
+  DIVIDERS & FOOTER
    ========================= */
 .divider{
   border:none; height:2px; width:70%; margin:1.5rem auto; border-radius:1px;
@@ -144,7 +144,7 @@ body > *:not(.site-footer){ flex:1 0 auto; }
 .site-footer small{ font-size:.9rem; }
 
 /* =========================
-   TWITCH STATUS BADGE
+  TWITCH STATUS BADGE
    ========================= */
 .twitch-status{
   display:flex; justify-content:center; align-items:center; text-align:center;
@@ -156,7 +156,7 @@ body > *:not(.site-footer){ flex:1 0 auto; }
 .twitch-status a{ text-decoration:none; color:inherit; display:inline-block; width:100%; }
 
 /* =========================
-   SIDE ART (LEFT/RIGHT)
+  SIDE ART (LEFT/RIGHT)
    ========================= */
 .side-art::before,
 .side-art::after{
@@ -184,7 +184,7 @@ body > *:not(.site-footer){ flex:1 0 auto; }
 }
 
 /* =========================
-   ANIMATIONS (KEYFRAMES)
+  ANIMATIONS (KEYFRAMES)
    ========================= */
 @keyframes waveColors { from{background-position:0% center;} to{background-position:100% center;} }
 @keyframes chaosPulse {
@@ -211,7 +211,7 @@ body > *:not(.site-footer){ flex:1 0 auto; }
 @keyframes pulseLive { 0%,100%{ box-shadow:0 0 0 rgba(145,70,255,0); } 50%{ box-shadow:0 0 18px rgba(145,70,255,.6); } }
 
 /* =========================
-   MEDIA QUERIES / ACCESSIBILITY
+  MEDIA QUERIES / ACCESSIBILITY
    ========================= */
 @media (max-width: 992px){
   .side-art::before{ width:clamp(180px, 32vw, 360px); opacity:.12; }
